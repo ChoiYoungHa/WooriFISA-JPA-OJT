@@ -126,7 +126,7 @@ public class JpaExample {
             User selectUser = em.find(User.class, user.getId());
             System.out.println("User: " + selectUser.getName() + " - " + selectUser.getEmail());
 
-						// delete entity
+            // delete entity
             em.remove(foundUser);
             System.out.println("User deleted");
 
